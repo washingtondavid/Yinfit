@@ -1,0 +1,6 @@
+{
+  "name": "QiPosture · Vitalidad & Gimnasio Postural Tradicional",
+  "description": "Gimnasio postural inteligente con ejercicios de medicina china tradicional, alineación visual con IA en tiempo real, sincronización encriptada, integración de biosensores y reloj circadiano.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

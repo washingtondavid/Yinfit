@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-serif: 'Noto Serif', Georgia, serif;
+    --font-display: 'Cinzel', 'Noto Serif', serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    
+    /* Oriental Traditional & Bio-Mechanic Palette (Wabi-Sabi & Jade / Terracotta) */
+    --color-jade: #2d6a4f;
+    --color-jade-soft: #d8f3dc;
+    --color-vermilion: #b93826;
+    --color-gold: #c49b66;
+    --color-gold-faint: rgba(196, 155, 102, 0.12);
+    --color-ink-950: #0d1014;
+    --color-ink-900: #14181f;
+    --color-ink-800: #1c222c;
+    --color-ink-700: #272f3d;
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #0d1014;
+  color: #e6e8eb;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbars with Zen restraint */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(20, 24, 31, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(196, 155, 102, 0.25);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(196, 155, 102, 0.45);
+}
+
+.font-display {
+  font-family: 'Cinzel', 'Noto Serif', serif;
+}
+
+.font-serif-tcm {
+  font-family: 'Noto Serif', Georgia, serif;
+}
+
+.font-mono-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle ink wash blur & paper grain feel */
+.bg-ink-wash {
+  background: radial-gradient(circle at 50% 0%, rgba(196, 155, 102, 0.05) 0%, transparent 75%);
+}
+
+.tcm-gold-gradient {
+  background: linear-gradient(135deg, #dfb77d 0%, #c49b66 50%, #9e7542 100%);
+}
